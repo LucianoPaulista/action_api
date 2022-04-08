@@ -75,3 +75,4 @@ AllCops:
     - "public/**/*"
     - "tmp/**/*"
     - "bin/bundle"
+    - "db/*"
