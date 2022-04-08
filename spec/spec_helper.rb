@@ -99,8 +99,6 @@ if ENV.fetch('COVERAGE', false)
   end
 end
 
-
 SimpleCov.at_exit do
   SimpleCov.result.format!
 end
-
