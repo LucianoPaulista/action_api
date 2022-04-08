@@ -95,7 +95,7 @@ RSpec.configure do |config|
 end
 if ENV.fetch('COVERAGE', false)
   SimpleCov.start do
-    SimpleCov.minimum_coverage 80
+    SimpleCov.minimum_coverage 70
   end
 end
 
