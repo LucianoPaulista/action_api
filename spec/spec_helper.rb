@@ -96,4 +96,4 @@ end
 SimpleCov.at_exit do
   SimpleCov.result.format!
 end
-SimpleCov.minimum_coverage 40
+SimpleCov.minimum_coverage 80
