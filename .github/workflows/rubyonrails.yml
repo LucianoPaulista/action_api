@@ -23,6 +23,7 @@ jobs:
           bundle exec rails db:create
           bundle exec rails db:migrate
           bundle exec rake
+          COVERAGE=true bundle exec rspec
       - name: Rubocop Check
         run: |
           bundle exec rubocop
