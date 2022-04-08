@@ -93,7 +93,14 @@ RSpec.configure do |config|
   #   # as the one that triggered the failure.
   #   Kernel.srand config.seed
 end
+if ENV.fetch('COVERAGE', false)
+  SimpleCov.start do
+    SimpleCov.minimum_coverage 80
+  end
+end
+
+
 SimpleCov.at_exit do
   SimpleCov.result.format!
 end
-SimpleCov.minimum_coverage 80
+
